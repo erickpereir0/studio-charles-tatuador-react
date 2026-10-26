@@ -182,8 +182,8 @@ export default function SecaoOrcamento() {
             Simular envio do pedido
           </button>
           <p className="formulario-aviso">
-            Demonstração. Nenhum pedido real é enviado e os dados não
-            são armazenados.
+            Demonstração. Nenhum pedido real é enviado e os dados não são
+            armazenados.
           </p>
         </form>
       </div>

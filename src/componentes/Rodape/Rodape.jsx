@@ -19,7 +19,7 @@ export default function Rodape() {
           type="button"
           onClick={() =>
             mostrarNotificacao(
-              'As imagens são referências fornecidas para a atividade e os pedidos são simulados.',
+              'As imagens são referências e os pedidos são simulados.',
               'informacao',
             )
           }

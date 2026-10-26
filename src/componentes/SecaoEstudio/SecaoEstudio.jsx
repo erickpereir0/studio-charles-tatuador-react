@@ -28,7 +28,6 @@ function Artistas() {
           >
             Sobre esse estilo
           </button>
-          <small>Perfil fictício</small>
         </article>
       ))}
     </div>
@@ -49,11 +48,6 @@ function Sobre() {
           O Estúdio de Charles tatuador é um conceito de estúdio para
           transformar referências, memórias e vontades em tatuagens com
           personalidade.
-        </p>
-        <p>
-          Esta apresentação é ilustrativa. A galeria reúne as fotos fornecidas
-          para a atividade, e os perfis demonstram a experiência de conhecer o
-          estúdio e preparar um pedido de orçamento.
         </p>
       </div>
       <ol className="lista-etapas">
