@@ -1,0 +1,27 @@
+{
+  "name": "estudio-charles-tatuador",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Projeto em React",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test testes/*.test.js",
+    "format": "prettier --write \"src/**/*.jsx\" src/App.js .prettierrc.json",
+    "format:check": "prettier --check \"src/**/*.jsx\" src/App.js .prettierrc.json"
+  },
+  "engines": {
+    "node": "^22.12.0 || >=24.0.0"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.2",
+    "prettier": "^3.9.10",
+    "vite": "8.3.5"
+  }
+}

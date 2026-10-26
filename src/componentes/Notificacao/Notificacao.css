@@ -1,0 +1,82 @@
+/* Estilos de Notificacao */
+
+.notificacao {
+  display: flex;
+  align-items: start;
+  gap: 13px;
+  padding: 18px 13px 18px 18px;
+  border: 1px solid #777966;
+  border-radius: 5px;
+  background: #282c23;
+  color: #faf7ef;
+  box-shadow: 0 12px 45px #0008;
+  animation: entrada-notificacao 0.25s ease-out;
+}
+
+.notificacao--erro {
+  background: #38261f;
+  border-color: #bc806b;
+}
+
+.notificacao-icone {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #bfc8a6;
+  color: #1d2515;
+  font-weight: 600;
+}
+
+.notificacao--erro .notificacao-icone {
+  background: #e8ad98;
+  color: #342015;
+}
+
+.notificacao-texto {
+  flex: 1;
+  min-width: 0;
+  padding-top: 2px;
+}
+
+.notificacao-texto strong {
+  display: block;
+  font-size: 0.77rem;
+  font-weight: 600;
+}
+
+.notificacao-texto p {
+  margin-top: 4px;
+  font-size: 0.75rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.botao-icone {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  margin-top: -5px;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+}
+
+.botao-icone:hover {
+  background: #ffffff12;
+}
+
+@keyframes entrada-notificacao {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

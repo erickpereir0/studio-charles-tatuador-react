@@ -1,0 +1,202 @@
+/* Estilos de Portfolio */
+
+.portfolio-ferramentas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+
+.portfolio-ferramentas p strong {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.portfolio-ferramentas p > span {
+  display: block;
+  margin-top: 3px;
+  color: var(--texto-suave);
+  font-size: 0.74rem;
+}
+
+.grade-tatuagens {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 31px 25px;
+}
+
+.cartao-tatuagem {
+  min-width: 0;
+}
+
+.imagem-tatuagem {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1.04;
+  background: #d2c8b4;
+  border-radius: 2px;
+}
+
+.imagem-tatuagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.cartao-tatuagem:hover img {
+  transform: scale(1.035);
+}
+
+.imagem-tatuagem--foto {
+  display: block;
+  padding: 12px;
+  background: #11140f;
+  border: 1px solid var(--borda);
+}
+
+.imagem-tatuagem--foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  filter: none;
+  transition: none;
+}
+
+.cartao-tatuagem:hover .imagem-tatuagem--foto img {
+  transform: none;
+}
+
+.imagem-tatuagem--foto:hover {
+  border-color: var(--destaque-claro);
+}
+
+.cartao-tatuagem figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 15px;
+  padding-top: 13px;
+}
+
+.cartao-tatuagem h3 {
+  font-size: 0.87rem;
+  font-weight: 500;
+}
+
+.cartao-tatuagem figcaption > span {
+  color: var(--texto-suave);
+  font-size: 0.69rem;
+}
+
+.cartao-tatuagem--foto figcaption {
+  display: block;
+}
+
+.cartao-tatuagem--foto .categoria-foto {
+  display: block;
+  color: var(--destaque-claro);
+  font-size: 0.63rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cartao-tatuagem--foto h3 {
+  margin-top: 5px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.cartao-tatuagem--foto figcaption > span:last-child {
+  display: block;
+  margin-top: 3px;
+}
+
+.portfolio-base {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-top: 38px;
+}
+
+.quantidade-resultados {
+  font-size: 0.72rem;
+  color: var(--texto-suave);
+}
+
+.nota-ilustracao {
+  margin-top: 25px;
+  font-size: 0.67rem;
+  color: var(--texto-suave);
+}
+
+@media (max-width: 1100px) {
+  .cartao-tatuagem figcaption {
+    display: block;
+  }
+  .cartao-tatuagem figcaption > span {
+    display: block;
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 800px) {
+  .grade-tatuagens {
+    gap: 26px 18px;
+  }
+  .portfolio-base {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .portfolio-ferramentas {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 17px;
+    margin-bottom: 22px;
+  }
+  .portfolio-ferramentas p > span {
+    font-size: 0.72rem;
+  }
+  .grade-tatuagens {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 14px;
+  }
+  .imagem-tatuagem {
+    aspect-ratio: 1 / 1.12;
+  }
+  .imagem-tatuagem--foto {
+    padding: 8px;
+  }
+  .cartao-tatuagem h3 {
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+  .cartao-tatuagem--foto h3 {
+    font-size: 0.84rem;
+  }
+  .cartao-tatuagem--foto .categoria-foto {
+    font-size: 0.59rem;
+  }
+  .cartao-tatuagem figcaption {
+    padding-top: 10px;
+  }
+  .cartao-tatuagem figcaption > span {
+    font-size: 0.63rem;
+  }
+  .portfolio-base {
+    margin-top: 28px;
+    gap: 16px;
+  }
+  .nota-ilustracao {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+}

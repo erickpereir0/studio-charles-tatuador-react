@@ -1,0 +1,97 @@
+/* Estilos de Acordeao */
+
+.acordeao-item {
+  border-bottom: 1px solid var(--borda);
+}
+
+.acordeao-item:first-child {
+  border-top: 1px solid var(--borda);
+}
+
+.acordeao-botao {
+  width: 100%;
+  min-height: 85px;
+  display: grid;
+  grid-template-columns: 22px 1fr 29px;
+  align-items: center;
+  gap: 18px;
+  padding: 21px 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.numero-duvida {
+  font-size: 0.62rem;
+  color: var(--texto-suave);
+}
+
+.acordeao-simbolo {
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--borda-controle);
+  border-radius: 50%;
+  transition:
+    background 0.25s,
+    transform 0.25s;
+}
+
+.aberto > h3 .acordeao-simbolo {
+  background: var(--destaque);
+  border-color: var(--destaque);
+  transform: rotate(45deg);
+}
+
+.acordeao-painel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    grid-template-rows 0.28s ease,
+    opacity 0.2s ease,
+    visibility 0.28s;
+}
+
+.acordeao-painel.aberto {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  visibility: visible;
+}
+
+.acordeao-painel > div {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.acordeao-painel p {
+  padding: 0 34px 25px 40px;
+  color: var(--texto-suave);
+  font-size: 0.83rem;
+  line-height: 1.9;
+}
+
+@media (max-width: 800px) {
+  .acordeao-botao {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 620px) {
+  .acordeao-botao {
+    grid-template-columns: 16px 1fr 28px;
+    gap: 12px;
+    min-height: 82px;
+    font-size: 0.81rem;
+  }
+  .acordeao-painel p {
+    padding-left: 28px;
+    padding-right: 10px;
+    font-size: 0.79rem;
+  }
+}

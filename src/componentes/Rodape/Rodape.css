@@ -1,0 +1,68 @@
+/* Estilos de Rodape */
+
+.rodape-site {
+  border-top: 1px solid var(--borda);
+}
+
+.rodape-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  padding-block: 38px;
+}
+
+.rodape-site .marca > span {
+  font-size: 1.9rem;
+}
+
+.rodape-site .marca small {
+  font-size: 0.43rem;
+}
+
+.rodape-site p {
+  color: var(--texto-suave);
+  font-size: 0.75rem;
+  line-height: 1.9;
+}
+
+.rodape-site p > span {
+  font-size: 0.64rem;
+}
+
+.rodape-informacoes {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  min-height: 44px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--borda);
+  font-size: 0.75rem;
+}
+
+.rodape-informacoes:hover {
+  color: var(--destaque-claro);
+}
+
+@media (max-width: 800px) {
+  .rodape-site p {
+    max-width: 240px;
+  }
+  .rodape-conteudo {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 620px) {
+  .rodape-conteudo {
+    flex-direction: column;
+    align-items: start;
+    gap: 23px;
+    padding-block: 32px;
+  }
+  .rodape-site p {
+    max-width: none;
+  }
+}

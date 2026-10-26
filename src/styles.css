@@ -1,0 +1,22 @@
+/* Entrada global: variáveis, estilos compartilhados e estilos por componente. */
+/* As regras e os ajustes responsivos ficam nos arquivos importados abaixo. */
+
+@import url("./variaveis.css");
+@import url("./estilos/base.css");
+@import url("./estilos/compartilhados.css");
+@import url("./componentes/Marca/Marca.css");
+@import url("./componentes/Cabecalho/Cabecalho.css");
+@import url("./componentes/Apresentacao/Apresentacao.css");
+@import url("./componentes/SecaoEstudio/SecaoEstudio.css");
+@import url("./componentes/Abas/Abas.css");
+@import url("./componentes/Portfolio/Portfolio.css");
+@import url("./componentes/MenuSuspenso/MenuSuspenso.css");
+@import url("./componentes/Paginacao/Paginacao.css");
+@import url("./componentes/BarraProgresso/BarraProgresso.css");
+@import url("./componentes/SecaoOrcamento/SecaoOrcamento.css");
+@import url("./componentes/SecaoDuvidas/SecaoDuvidas.css");
+@import url("./componentes/Acordeao/Acordeao.css");
+@import url("./componentes/Rodape/Rodape.css");
+@import url("./contexto/ContextoNotificacao/ContextoNotificacao.css");
+@import url("./componentes/Notificacao/Notificacao.css");
+@import url("./estilos/acessibilidade.css");

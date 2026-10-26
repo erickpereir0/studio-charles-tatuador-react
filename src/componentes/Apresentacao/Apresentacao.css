@@ -1,0 +1,262 @@
+/* Estilos de Apresentacao */
+
+.apresentacao {
+  overflow: hidden;
+}
+
+.grade-apresentacao {
+  display: grid;
+  grid-template-columns: 1.03fr 1fr;
+  align-items: center;
+  gap: 48px;
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+
+.apresentacao-texto {
+  padding-block: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.apresentacao h1 {
+  margin-top: 26px;
+  font-size: clamp(4.5rem, 7.5vw, 7.6rem);
+}
+
+.apresentacao-descricao {
+  max-width: 385px;
+  margin-top: 28px;
+  color: var(--texto-suave);
+  font-size: 0.99rem;
+  line-height: 1.85;
+}
+
+.apresentacao-acoes {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.apresentacao-estilos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 55px;
+  color: var(--texto-suave);
+  font-size: 0.61rem;
+  letter-spacing: 0.15em;
+}
+
+.apresentacao-estilos span + span::before {
+  content: "·";
+  margin-right: 24px;
+  color: var(--destaque-claro);
+}
+
+.apresentacao-arte {
+  position: relative;
+  min-width: 0;
+  border: 1px solid #393c34;
+  background: #20221e;
+}
+
+.apresentacao-arte > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.96;
+  object-fit: cover;
+}
+
+.apresentacao-arte--foto {
+  overflow: hidden;
+  background: #11140f;
+}
+
+.apresentacao-arte--foto > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1.08;
+  object-fit: contain;
+  padding: 12px;
+  max-height: 620px;
+}
+
+.legenda-foto {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  border-top: 1px solid var(--borda);
+  background: #252a20;
+}
+
+.legenda-foto > span {
+  font-size: 0.59rem;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+}
+
+.legenda-foto > small {
+  margin-left: auto;
+  color: var(--texto-suave);
+  font-size: 0.48rem;
+  letter-spacing: 0.12em;
+}
+
+.apresentacao-base {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-block: 19px;
+  border-top: 1px solid var(--borda);
+  color: var(--texto-suave);
+  font-size: 0.59rem;
+  letter-spacing: 0.12em;
+}
+
+.apresentacao-base a {
+  display: flex;
+  gap: 34px;
+  align-items: center;
+  min-height: 30px;
+  font-size: 0.7rem;
+  letter-spacing: 0;
+}
+
+@media (min-width: 1600px) {
+  .grade-apresentacao {
+    padding-block: 75px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .grade-apresentacao {
+    gap: 30px;
+  }
+  .apresentacao h1 {
+    font-size: 6.5vw;
+  }
+  .apresentacao-acoes {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .grade-apresentacao {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .apresentacao h1 {
+    font-size: 4rem;
+  }
+  .apresentacao-descricao {
+    font-size: 0.85rem;
+    margin-top: 20px;
+  }
+  .apresentacao-acoes {
+    margin-top: 24px;
+    gap: 14px;
+  }
+  .apresentacao-acoes .link-texto {
+    font-size: 0.76rem;
+  }
+  .apresentacao-estilos {
+    gap: 12px;
+    font-size: 0.51rem;
+    margin-top: 30px;
+  }
+  .apresentacao-estilos span + span::before {
+    margin-right: 12px;
+  }
+  .apresentacao-texto {
+    padding-block: 20px;
+  }
+  .legenda-foto {
+    padding: 15px;
+    gap: 12px;
+  }
+  .legenda-foto > small {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .grade-apresentacao {
+    grid-template-columns: 1fr;
+    padding-top: 35px;
+    gap: 25px;
+  }
+  .apresentacao-texto {
+    padding-block: 0;
+  }
+  .apresentacao h1 {
+    font-size: clamp(4.5rem, 17vw, 6.2rem);
+    margin-top: 19px;
+  }
+  .apresentacao-descricao {
+    max-width: 340px;
+    font-size: 0.9rem;
+  }
+  .apresentacao-acoes {
+    gap: 22px;
+  }
+  .apresentacao-acoes .botao {
+    padding-inline: 18px;
+    gap: 23px;
+    font-size: 0.82rem;
+  }
+  .apresentacao-acoes .link-texto {
+    font-size: 0.8rem;
+  }
+  .apresentacao-estilos {
+    gap: 16px;
+    font-size: 0.57rem;
+    margin-top: 30px;
+  }
+  .apresentacao-estilos span + span::before {
+    margin-right: 16px;
+  }
+  .apresentacao-arte > img {
+    aspect-ratio: 1.1;
+    max-height: 440px;
+    object-fit: cover;
+  }
+  .apresentacao-arte--foto > img {
+    aspect-ratio: 1 / 1.1;
+    max-height: 480px;
+    object-fit: contain;
+    padding: 10px;
+  }
+  .apresentacao-base {
+    font-size: 0.49rem;
+    gap: 14px;
+    padding-block: 14px;
+  }
+  .apresentacao-base a {
+    gap: 14px;
+    font-size: 0.62rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .apresentacao-acoes {
+    gap: 15px;
+  }
+  .apresentacao-acoes .link-texto {
+    font-size: 0.73rem;
+    gap: 8px;
+  }
+  .apresentacao-estilos {
+    gap: 12px;
+    font-size: 0.51rem;
+  }
+  .apresentacao-estilos span + span::before {
+    margin-right: 12px;
+  }
+}

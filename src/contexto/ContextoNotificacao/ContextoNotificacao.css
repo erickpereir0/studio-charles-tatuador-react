@@ -1,0 +1,16 @@
+/* Estilos de ContextoNotificacao */
+
+.regiao-notificacoes {
+  position: fixed;
+  z-index: 100;
+  right: 24px;
+  bottom: 24px;
+  width: min(400px, calc(100vw - 32px));
+}
+
+@media (max-width: 620px) {
+  .regiao-notificacoes {
+    right: 16px;
+    bottom: 16px;
+  }
+}

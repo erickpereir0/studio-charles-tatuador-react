@@ -1,0 +1,58 @@
+/* Estilos de BarraProgresso */
+
+.grupo-progresso {
+  padding-bottom: 28px;
+}
+
+.rotulo-progresso {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 13px;
+  font-size: 0.76rem;
+}
+
+.rotulo-progresso strong {
+  font-weight: 500;
+  color: var(--destaque-claro);
+}
+
+.barra-progresso {
+  display: block;
+  width: 100%;
+  height: 5px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 10px;
+  appearance: none;
+  background: #3b3e34;
+  accent-color: var(--destaque-claro);
+}
+
+.barra-progresso::-webkit-progress-bar {
+  background: #3b3e34;
+  border-radius: 10px;
+}
+
+.barra-progresso::-webkit-progress-value {
+  background: var(--destaque-claro);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.barra-progresso::-moz-progress-bar {
+  background: var(--destaque-claro);
+  border-radius: 10px;
+}
+
+.grupo-progresso > p {
+  margin-top: 10px;
+  color: var(--texto-suave);
+  font-size: 0.65rem;
+}
+
+@media (max-width: 620px) {
+  .grupo-progresso {
+    padding-bottom: 24px;
+  }
+}

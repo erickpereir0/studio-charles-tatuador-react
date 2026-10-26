@@ -1,0 +1,78 @@
+/* Estilos de Paginacao */
+
+.paginacao,
+.numeros-paginas {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.paginacao {
+  gap: 16px;
+}
+
+.paginacao button {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 8px 13px;
+  border: 1px solid var(--borda-controle);
+  border-radius: 3px;
+  background: transparent;
+  font-size: 0.72rem;
+}
+
+.paginacao button:hover:not(:disabled):not([aria-current]) {
+  background: #ffffff0c;
+}
+
+.paginacao button[aria-current="page"] {
+  border-color: var(--destaque);
+  background: var(--destaque);
+  color: #fff9f3;
+}
+
+.paginacao button:disabled {
+  color: #777b72;
+  border-color: #3b3e35;
+  background: #ffffff03;
+}
+
+.numeros-paginas button {
+  min-width: 38px;
+}
+
+@media (max-width: 620px) {
+  .paginacao {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .paginacao button {
+    padding: 8px 10px;
+    font-size: 0.68rem;
+    gap: 6px;
+  }
+  .numeros-paginas button {
+    min-width: 35px;
+    padding-inline: 9px;
+  }
+  .paginacao .numeros-paginas {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-content: center;
+  }
+  .paginacao > button {
+    width: 100%;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 360px) {
+  .paginacao > button {
+    padding-inline: 8px;
+  }
+}

@@ -1,0 +1,85 @@
+/* Estilos de Marca */
+
+.marca {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.marca > span {
+  font-family: var(--fonte-titulos);
+  font-size: 2.4rem;
+  letter-spacing: 0.14em;
+}
+
+.marca-ponto {
+  color: var(--destaque-claro);
+  letter-spacing: 0;
+}
+
+.marca small {
+  margin-top: 9px;
+  font-size: 0.51rem;
+  letter-spacing: 0.38em;
+}
+
+.marca-charles > .marca-nome {
+  font-size: 2.25rem;
+  letter-spacing: 0.035em;
+}
+
+.marca-charles > .marca-abertura,
+.rodape-site .marca-charles > .marca-abertura {
+  margin-bottom: 4px;
+  font-family: var(--fonte-texto);
+  font-size: 0.56rem;
+  line-height: 1.3;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+}
+
+.marca-charles > small {
+  margin-top: 6px;
+  font-size: 0.45rem;
+  letter-spacing: 0.35em;
+}
+
+@media (max-width: 800px) {
+  .marca-charles > .marca-nome {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .marca > span {
+    font-size: 1.85rem;
+  }
+  .marca small {
+    font-size: 0.42rem;
+    margin-top: 7px;
+  }
+  .marca-charles > .marca-nome {
+    font-size: 1.7rem;
+  }
+  .marca-charles > .marca-abertura {
+    font-size: 0.46rem;
+    margin-bottom: 3px;
+  }
+  .marca-charles > small {
+    font-size: 0.37rem;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .marca > span {
+    font-size: 1.65rem;
+  }
+  .marca small {
+    font-size: 0.37rem;
+  }
+  .marca-charles > .marca-nome {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,84 @@
+/* Estilos de Cabecalho */
+
+.atalho-conteudo {
+  position: fixed;
+  z-index: 200;
+  top: 12px;
+  left: 12px;
+  padding: 12px 20px;
+  background: var(--texto);
+  color: var(--fundo);
+  transform: translateY(-150%);
+}
+
+.atalho-conteudo:focus {
+  transform: translateY(0);
+}
+
+.cabecalho-site {
+  border-bottom: 1px solid var(--borda);
+}
+
+.cabecalho-conteudo {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.navegacao-principal {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.navegacao-principal a {
+  padding-block: 12px;
+  color: var(--texto-suave);
+  font-size: 0.83rem;
+}
+
+.navegacao-principal a:hover {
+  color: var(--texto);
+}
+
+.cabecalho-convite {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  min-height: 44px;
+  border-bottom: 1px solid #6d7067;
+  font-size: 0.79rem;
+}
+
+@media (max-width: 1100px) {
+  .cabecalho-convite {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .cabecalho-conteudo {
+    min-height: 87px;
+    gap: 18px;
+  }
+  .navegacao-principal {
+    gap: 18px;
+  }
+  .navegacao-principal a {
+    font-size: 0.73rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .cabecalho-conteudo {
+    gap: 12px;
+  }
+  .navegacao-principal {
+    gap: 13px;
+  }
+  .navegacao-principal a {
+    font-size: 0.7rem;
+  }
+}

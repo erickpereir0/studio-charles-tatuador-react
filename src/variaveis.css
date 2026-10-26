@@ -1,0 +1,13 @@
+:root {
+  --fundo: #171817;
+  --superficie: #1e211b;
+  --texto: #f3eee3;
+  --texto-suave: #b0b1a5;
+  --destaque: #ac4f34;
+  --destaque-claro: #df9a78;
+  --foco: #f1b79b;
+  --borda: #3a3d33;
+  --borda-controle: #77806d;
+  --fonte-texto: 'Segoe UI', Arial, sans-serif;
+  --fonte-titulos: Georgia, 'Times New Roman', serif;
+}

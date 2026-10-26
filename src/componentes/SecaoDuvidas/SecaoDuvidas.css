@@ -1,0 +1,52 @@
+/* Estilos de SecaoDuvidas */
+
+.secao-duvidas {
+  border-top: 1px solid var(--borda);
+  background: #1b1d18;
+}
+
+.grade-duvidas {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 100px;
+}
+
+.grade-duvidas h2 {
+  margin-top: 20px;
+}
+
+.secao-descricao {
+  max-width: 255px;
+  margin-top: 25px;
+  color: var(--texto-suave);
+  font-size: 0.89rem;
+}
+
+@media (max-width: 1100px) {
+  .grade-duvidas {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .grade-duvidas {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 620px) {
+  .grade-duvidas {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .grade-duvidas h2 {
+    font-size: 3rem;
+    margin-top: 16px;
+  }
+  .secao-descricao {
+    margin-top: 18px;
+    max-width: 300px;
+    font-size: 0.85rem;
+  }
+}
